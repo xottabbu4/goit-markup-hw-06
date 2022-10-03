@@ -50,9 +50,7 @@
           <li>
             <a class="header-contacts-item" href="tel:+38-096-111-11-11">
               <svg class="header-phone-icon" height="16" width="10">
-                <use href="./images/icons.svg#icon-smartphone" /></svg
-              >+38 096 111 11 11</a
-            >
+                <use href="./images/icons.svg#icon-smartphone" /></svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -75,12 +73,50 @@
           <button
             type="button"
             data-modal-close
-            class="modal-close js-modal-close"
-          >
+            class="modal-close js-modal-close">
             <svg class="modal-icon">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
+          <form class="modal-form">
+          <strong class="modal-title">Залиште свої дані, ми вам передзвонимо</strong>
+          <label class="modal-form-label">
+            <span class="modal-form-label-title">Ім'я</span>
+            <input type="text" name="name" required minlength="2"/>
+            <svg class="modal-form-input-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
+          </label>
+          <label class="modal-form-label">
+            <span class="modal-form-label-title">Телефон</span>
+            <input type="tel" name="tel" required/>
+            <svg class="modal-form-input-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-number"></use>
+            </svg>
+          </label>
+          <label class="modal-form-label">
+            <span class="modal-form-label-title">Пошта</span>
+            <input type="email" name="email" required/>
+            <svg class="modal-form-input-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="modal-form-textarea">
+            <span class="modal-form-label-title">Коментар</span>
+            <textarea name="comment" rows="6" placeholder="Введіть текст"></textarea>
+          </label>
+          <label class="modal-form-policy">
+            <input class="policy-checkbox visually-hidden" type="checkbox" />
+            <svg class="policy-icon" width="30px" height="15px">
+              <use class="policy-icon-uncheck" href="./images/icons.svg#icon-uncheck"></use>
+              <use class="policy-icon-check" href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <span class="policy-text">Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору</a></span>
+          
+          </label>
+      
+          <button class="modal-button" type="submit">Відправити</button>      
+      </form>
         </div>
       </section>
 
@@ -145,24 +181,21 @@
           <ul class="about-us-list">
             <li>
               <div class="about-us-card">
-                <div class="about-us-card-overlay">
-                  <h3 class="about-us-card-title">Десктопні додатки</h3>
-                </div>
-                <img
+                  
+                <img class="about-us-img"
                   src="./images/1.jpg"
                   alt="desktop"
                   height="294"
                   width="370"
                 />
+                <p class="about-us-card-title">Десктопні додатки</p>
               </div>
             </li>
             <li>
               <div class="about-us-card">
-                <div class="about-us-card-overlay">
-                  <h3 class="about-us-card-title">Мобільні додатки</h3>
-                </div>
+                  <p class="about-us-card-title">Мобільні додатки</p>
 
-                <img
+                <img class="about-us-img"
                   src="./images/2.jpg"
                   alt="mobile"
                   height="294"
@@ -172,15 +205,9 @@
             </li>
             <li>
               <div class="about-us-card">
-                <div class="about-us-card-overlay">
-                  <h3 class="about-us-card-title">Дизайнерські рішення</h3>
-                </div>
-                <img
-                  src="./images/3.jpg"
-                  alt="tablet"
-                  height="294"
-                  width="370"
-                />
+                <img class="about-us-img"
+                  src="./images/3.jpg" alt="tablet" height="294" width="370"/>
+                  <p class="about-us-card-title">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
@@ -516,7 +543,7 @@
         </div>
 
         <div class="footer-social">
-          <p class="footer-social-sign">приєднуйтесь</p>
+          <p class="footer-title">приєднуйтесь</p>
           <ul class="our-team-contact-list our-team-contact-list-footer">
             <li class="our-team-contact-item our-team-contact-item-footer">
               <a
@@ -575,6 +602,19 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-subscribe">
+          <p class="footer-title"> підпишіться на розсилку</p>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-form-label">
+              <input type="email" name="email-subscribe" placeholder="E-mail">
+              <button class="footer-subscribe-button" type="submit">Підписатися
+                <svg class="footer-subscribe-button-img" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
